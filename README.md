@@ -1,38 +1,44 @@
-# Modeling Project
+# Neuronal Network Model
 
-The idea is to implement (and simulate) synaptic transmission and to implement the hodgkin-huxley model to make it more biologically realistic.
+A Python implementation of a somewhat biologically realistic neuronal network based on multi-compartment modeling.
 
+## Overview
 
+This repository contains a computational model of neuronal networks that builds upon:
 
+- **Hodgkin-Huxley Model**: The classic model of action potential generation in neurons
+- **Cable Theory**: Mathematical framework for electrical signal propagation in neuronal processes
+- **Multi-Compartment Models**: Division of neurons into discrete segments with distinct electrical properties
 
+## What's Included
 
-# Modeling Synaptic Transmission with the Hodgkin-Huxley Model
+- Multi-compartment neuron implementation with soma, axon, and dendrites
+- Hodgkin-Huxley dynamics with ion channels (Na⁺, K⁺, Ca²⁺, etc.)
+- Synaptic connections between neurons
+- Network simulation
+- Rudimentary visualization for analysis
 
-The Hodgkin-Huxley Model consists of these four ODEs:
+## Quick Start
 
+```bash
+pip install numpy matplotlib seaborn networkx
+cd src/
+python demo.py
+```
 
-### Current Balance Equation
-$ C \frac{dV}{dt} = I_{app} - g_{Na}m^3h(V-E_{Na}) - g_Kn^4(V-E_K) - g_L(V-E_L) $
+## Structure
 
-With...
-|Short|Formula|
-|---|---|
-| $I_{Na_V}$ | $g_{Na}m^3h(V-E_{Na})$ |
-| $I_{K_V}$ | $g_Kn^4(V-E_K)$ |
-| $I_L$ | $g_L(V-E_L)$ |
+- `src/` - Main implementation
+  - `neuron.py` - Multi-compartment neuron class
+  - `compartment.py` - Individual compartment with Hodgkin-Huxley dynamics
+  - `network.py` - Network of connected neurons
+  - `parameters.py` - Model parameters and config
+  - `demo.py` - Example simulation and visualization
 
-### a
-$ \frac{dm}{dt} = -\frac{m-m_\infty(V)}{\tau_m(V)} $
+## Requirements
 
-### b
-$ \frac{dh}{dt} = -\frac{h-h_\infty(V)}{\tau_h(V)} $
-
-### c
-$ \frac{dn}{dt} = -\frac{n-n_\infty(V)}{\tau_n(V)} $
-
-
-
-> Idan Segev (as quoted in Lindsay (2022)):
->
-> "Use Hodgkin-Huxley in an extended way and build a simulation of the way these cells are active, to get the music - the electrical activity - of this network of neurons that should imitate the real biological network that you're trying to understand!
-
+- Python 3.7+
+- NumPy
+- Matplotlib
+- Seaborn
+- NetworkX
