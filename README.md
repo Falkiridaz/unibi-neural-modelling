@@ -80,6 +80,7 @@ Where:
 Alan Hodgkin and Andrew Huxley introduced a mathematical framework for modeling ionic currents of excitable membranes that has become standard. It describes the ionic mechanisms underlying action potential generation. The Hodgkin-Huxley model is a system of four ordinary differential equations (ODEs):
 
 #### Membrane Current Equation
+
 $$ C \frac{dV}{dt} = I_{app} - I_{Na_V} - I_{K_V} - I_L$$
 
 Where:
@@ -92,12 +93,15 @@ Where:
 #### Ionic Currents
 
 **Sodium Current:**
+
 $$ I_{Na_V} = g_{Na} m^3 h (V - E_{Na}) $$
 
 **Potassium Current:**
+
 $$ I_{K_V} = g_K n^4 (V - E_K) $$
 
 **Leak Current:**
+
 $$ I_L = g_L (V - E_L) $$
 
 Where:
@@ -116,15 +120,21 @@ $$ \frac{dn}{dt} = \alpha_n(V) (1 - n) - \beta_n(V) n $$
 Where $n$ *= (m, h, n)*, $\alpha_n$, and $\beta_n$ are voltage-dependent rate constants:
 
 **Sodium activation (m):**
+
 $$ \alpha_m = \frac{0.1 (V + 40)}{1 - exp(-0.1 (V + 40))} $$
+
 $$ \beta_m = 4 exp(-0.0556 (V + 65)) $$
 
 **Sodium inactivation (h):**
+
 $$ \alpha_h = 0.07 exp(-0.05 (V + 65)) $$
+
 $$ \beta_h = \frac{1}{1 + exp(-0.1 (V + 35))} $$
 
 **Potassium activation (n):**
+
 $$ \alpha_n = \frac{0.01 (V + 55)}{1 - exp(-0.1 (V + 55))} $$
+
 $$ \beta_n = 0.125 exp(-0.0125 (V + 65)) $$
 
 #### Hodgkin-Huxley Dynamics
