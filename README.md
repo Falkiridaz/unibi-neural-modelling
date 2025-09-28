@@ -110,7 +110,7 @@ Where:
 - $m$, $h$, $n$: Gating variables ($0 \le m$, $h$, $n \le 1$)
 
 #### Gating Variable Dynamics
-The transition of each subunit gate can be described by a kinetic scheme, in which the gating transition *closed $\rightarrow$ open* occurs at a voltage-dependent rate $\alpha_n(V)$, and the reverse transition *open $\rightarrow$ closed*, occurs at a voltage dependent rate $\beta_n(V)$.
+The transition of each subunit gate can be described by a kinetic scheme, in which the gating transition *closed → open* occurs at a voltage-dependent rate $\alpha_n(V)$, and the reverse transition *open → closed*, occurs at a voltage dependent rate $\beta_n(V)$.
 
 So the gating variables follow first-order kinetics:
 
