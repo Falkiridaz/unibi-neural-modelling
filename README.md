@@ -6,7 +6,7 @@ A somewhat biologically realistic implementation of multi-compartment neurons ba
 
 1. [Biological Background](#biological-background)
 2. [Mathematical Foundations](#mathematical-foundations)
-3. [Model Architecture](#model-architecture)
+3. [Architecture](#architecture)
 4. [Installation and Usage](#installation-and-usage)
 6. [Visualization](#visualization)
 6. [References](#references)
