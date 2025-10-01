@@ -273,3 +273,5 @@ The project includes comprehensive visualization tools:
 
 3. Churchland & Sejnowski (1997) *Grundlagen zur Neuroinformatik und Neurobiologie*. Vieweg.
 
+
+*A song on the equations to get into the right mood: [The Spark Within the Veil](https://suno.com/s/8Sy206NdDnw5yzba)*
